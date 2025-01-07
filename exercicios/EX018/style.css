@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+body{
+    background-color: rgb(186, 228, 186);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    color: rgb(4, 109, 0);
+    text-align: center;
+}
+
+/*
+- Pode utilizar h1#principal ou somente #principal
+
+ HTML X CSS
+  id  |  #
+class |  .
+
+*/
+
+#principal{
+    text-align: center;
+    background-color: green;
+    color: white;
+}
+
+.basico{
+    color: rgb(109, 163, 107);
+    font-weight: bold;
+    font-style: italic;
+}
+
+.intermediario{
+    color: rgb(110, 141, 161);
+}
+
+h2{
+    color: rgb(51, 77, 49);
+}
+
+p{
+    text-indent: 10px;
+    text-align: justify;
+}
+
+main{
+    background-color: white;
+    color: rgb(29, 29, 39);
+    padding: 5px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px rgba(146, 179, 146, 0.493);
+    margin: auto;
+}
+
+.destaque{
+    background-color: rgba(172, 255, 47, 0.555);
+}

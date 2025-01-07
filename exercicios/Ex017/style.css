@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+body{
+    font-family: Arial, Helvetica, sans-serif; /* Nome da fonte (busca da arial até a sans-serif)*/
+    background-color: rgb(29, 29, 39);
+}
+
+h1{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    color: lightgreen;
+}
+
+p{
+    /*
+    Medidas absolutas:
+    - cm, mm, in (polegadas), px, pt, pc
+
+    Medidas relativas:
+    - em (altura M), ex (altura x), rem (altura body), vw (view width), vh, %
+
+    -Recomendável utilizar px ou em! (recomendação da W3C)
+    16px equivale à 1em
+    */
+    font-size: 18px;
+    text-align: justify;  
+}
+
+main{
+    background-color: white;
+    padding: 3px;
+    margin: auto;
+    border-radius: 25px;
+}
