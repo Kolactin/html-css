@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+/* estilo para tela grande (acima de 800px) */
+
+@media screen and (min-width: 801px) {
+
+    header {
+        background-color: darkcyan ;
+    }
+    
+    header h1{
+        background-color: gray;
+        text-align: center;
+    }
+
+    nav#big {
+        display: inline-block;
+    }
+
+    header nav > ul > li{
+        background-color: darkcyan;
+    }
+
+    nav > ul > a > li  {
+        color: white;
+        text-decoration: none;
+        font-size: 1.2em;
+        display: inline-block;
+        padding-left: 20px;
+    }
+
+    nav > ul > a:hover {
+        padding-top: 4px;
+        padding-right: 4px;
+        background-color: rgba(17, 121, 121, 0.685);
+    }
+
+    main {
+        padding: 10px;
+        margin: auto;
+        text-align: center;
+        max-width: 600px;
+        background-color: lightgray;
+    }
+
+    main img {
+        max-width: 200px;
+        border-radius: 50%;
+    }
+}
