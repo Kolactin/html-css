@@ -20,9 +20,9 @@
 
 
 @media print {
- body{
-    /* background-image: url(../../Imagens/back-print.jpg);  DESNECESSÁRIO*/
- }
+ /* html {
+     background-image: url(../../Imagens/back-print.jpg);  DESNECESSÁRIO
+ }*/
 
  main {
     border: 2px dashed black;
