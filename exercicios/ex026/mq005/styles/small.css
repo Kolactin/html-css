@@ -1,24 +1,63 @@
 @charset "UTF-8";
 
-/* configurações para dispositivos abaixo de 800px*/
+/* configurações para dispositivos abaixo de 800px */
 
-@media screen and (max-width: 800px){
+body {
+    text-align: center;
+    background-color: white;
+}
 
-    body {
-        text-align: center;
-        background-color: white;
-    }
+div {
+    margin: auto;
+    background-color: darkcyan;
+    max-height: 100px;
+}
+main {
+    margin: auto;
+    max-width: 300px;
+    background-color: rgba(211, 211, 211, 0.432);
+}
 
-    nav > img#small {
-        display: block;
-        width: 100px;
-        height: 100px;
+#small:hover {
+    transform: rotate(90deg);
+    transition-duration: 1s; 
+    cursor: pointer;
+}
+
+@media screen and (min-width: 601px) and (max-width: 800px){
+    img#small {
+        margin: auto;
+        display: inline-block;
+        max-width: 35px;
+        max-height: 35px;
         border-radius: 50%;
     }
 
-    main {
-        margin: auto;
-        width: 500px;
+    #haMenu {
+        background-color: rgba(0, 139, 139, 0.678);
     }
 
+    menu > ul > li > a{
+        color: black;
+    }
+}
+
+@media screen and (max-width: 600px){
+    img#small {
+        display: block;
+        max-width: 30px;
+        max-height: 30px;
+        border-radius: 50%;
+    }
+
+    #haMenu {
+        background-color: rgba(0, 139, 139, 0.678);
+        text-align: left;
+    }
+
+    menu > ul > li > a{
+        color: black;
+        padding-bottom: 15px;
+        font-size: 1.1em;
+    }
 }

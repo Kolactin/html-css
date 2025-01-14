@@ -18,5 +18,10 @@ header h1{
     text-align: center;
 }
 
+a {
+    text-decoration: none;
+}
+
 #big {display: none;}
 #small {display: none;}
+menu {display: none;}
