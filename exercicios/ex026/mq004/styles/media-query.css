@@ -28,6 +28,12 @@
     border: 2px dashed black;
 }
 
+main::after {
+    font-size: 0.5em;
+    content: "Essa impressão foi feita através do site do mano kolas!";
+    text-decoration: underline;
+}
+
 h1 {
     font-family: monospace;
     text-shadow: none;
