@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexible box</title>
+    <Style>
+        .container {
+            background-color: aqua;
+
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: space-around;
+            
+        }  
+
+        .item {
+            background-color: darkgreen;
+            color: white;
+            border: 1px dashed orange;
+            text-align: center;
+
+            display: inline-box;
+
+            flex: auto; /* N deixa espaço em branco no container */
+            padding: 10px;
+        }
+
+    </Style>
+
+    <!-- 
+
+        flex-wrap: nowrap; confg padrão
+         //          wrap: quebra no sentido do main e cross axis    
+    
+
+         flex-flow: row nowrap; (shorthand - recomendação W3C)
+    -->
+
+</head>
+<body>
+    <div class="container">
+        <div class="item">EXEMPLO DE BLOCO A</div>
+        <div class="item">EXEMPLO DE BLOCO B</div>
+        <div class="item">EXEMPLO DE BLOCO C</div>
+        <div class="item">EXEMPLO DE BLOCO D</div>
+        <div class="item">EXEMPLO DE BLOCO E</div>
+        <div class="item">EXEMPLO DE BLOCO F</div>
+        <div class="item">EXEMPLO DE BLOCO G</div>
+    </div>
+</body>
+</html>
+
+<!--
+
+    directions: (row / row-reverse / column / column-reverse)
+
+    axis: (main-axis / cross-axis)
+
+
+        dir         |       main         |         cross
+----------------------------------------------------------------
+        row         |       left         |          down
+----------------------------------------------------------------
+        row-rev     |       right        |          down
+----------------------------------------------------------------
+        col         |       down         |          right
+----------------------------------------------------------------
+        col-rev     |       up           |          left
+-->
+
+
+<!--
+
+    Justify-content (alinha em relação ao eixo principal)
+
+    |  justify-content  !           oq faz?
+-----------------------------------------------------------
+    |    flex-start     |       Alinha ao main-start
+-----------------------------------------------------------
+    |     flex-end      |       Alinha ao main-end 
+-----------------------------------------------------------
+-->
+
+<!--        Alinhamento de espaçamento
+
+    space-between (Alinha 1º elemento no main-start e último elemento no main-end.
+    O espaço entre os demais, será distribuído uniformemente.)
+
+
+    space-evenly (Todos elementos são espaçados de forma igual, inclusive primeiro e último)
+
+    space-around (Divide o container em 3 e centraliza os elementos nestas divisões)
+
+-->
