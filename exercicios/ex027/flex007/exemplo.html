@@ -18,19 +18,24 @@
             color: white;
             text-align: center;
             border: 1px dashed black;
-            flex-basis: 150px ; /* Define uma base que pode variar */
-            flex-shrink: 0;
+            flex-basis: 200px ; 
         }
 
+        #i1{
+            flex-shrink: 1;
+            flex-grow: 1;
+        }
+        
+        #i2{
+            flex-shrink: 1;
+            flex-grow: 3;
+        }
 
-        /*
+        #i3{
+            flex-shrink: 1;
+            flex-grow: 5;
+        }
 
-        flex-shrink: 1 (pode encolher)
-        flex-grow: 0 (não pode crescer)
-
-        é possível utilizar outros números e haverá uma proporçaõ entre os elementos
-
-        */
     </style>
 
 </Style>
@@ -40,11 +45,6 @@
     <div class="item" id="i1">A</div>
     <div class="item" id="i2">B</div>
     <div class="item" id="i3">C</div>
-    <div class="item" id="i4">D</div>
-    <div class="item" id="i5">E</div>
-    <div class="item" id="i6">F</div>
-    <div class="item" id="i7">G</div>
-</div>
 </body>
 </html>
 </body>
